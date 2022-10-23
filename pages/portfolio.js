@@ -1,5 +1,37 @@
 import { useState } from "react"
 import Link from 'next/link'
+import Img from 'next/image'
+
+import wedding34 from "../public/img/portfolio-img/Wedding-34.jpg"
+import portrait01 from "../public/img/portfolio-img/Portrait-01.jpg"
+import kid01 from "../public/img/portfolio-img/Kid-01.jpg"
+import wedding35 from "../public/img/portfolio-img/Wedding-35.jpg"
+import portrait02 from "../public/img/portfolio-img/Portrait-02.jpg"
+import kid02 from "../public/img/portfolio-img/Kid-02.jpg"
+import wedding36 from "../public/img/portfolio-img/Wedding-36.jpg"
+import portrait03 from "../public/img/portfolio-img/Portrait-03.jpg"
+import kid03 from "../public/img/portfolio-img/Kid-03.jpg"
+import wedding37 from "../public/img/portfolio-img/Wedding-37.jpg"
+import portrait04 from "../public/img/portfolio-img/Portrait-04.jpg"
+import kid04 from "../public/img/portfolio-img/Kid-04.jpg"
+import wedding38 from "../public/img/portfolio-img/Wedding-38.jpg"
+import portrait05 from "../public/img/portfolio-img/Portrait-05.jpg"
+import kid05 from "../public/img/portfolio-img/Kid-05.jpg"
+import wedding39 from "../public/img/portfolio-img/Wedding-39.jpg"
+import portrait06 from "../public/img/portfolio-img/Portrait-06.jpg"
+import kid06 from "../public/img/portfolio-img/Kid-06.jpg"
+import wedding40 from "../public/img/portfolio-img/Wedding-40.jpg"
+import portrait07 from "../public/img/portfolio-img/Portrait-07.jpg"
+import kid07 from "../public/img/portfolio-img/Kid-07.jpg"
+import wedding41 from "../public/img/portfolio-img/Wedding-41.jpg"
+import portrait08 from "../public/img/portfolio-img/Portrait-08.jpg"
+import kid08 from "../public/img/portfolio-img/Kid-08.jpg"
+import wedding33 from "../public/img/portfolio-img/Wedding-33.jpg"
+import portrait09 from "../public/img/portfolio-img/Portrait-09.jpg"
+import kid09 from "../public/img/portfolio-img/Kid-09.jpg"
+import wedding43 from "../public/img/portfolio-img/Wedding-43.jpg"
+import portrait10 from "../public/img/portfolio-img/Portrait-10.jpg"
+import kid10 from "../public/img/portfolio-img/Kid-10.jpg"
 
 const Portfolio = () => {
 
@@ -14,36 +46,36 @@ const Portfolio = () => {
 
 	// Images array
 	const images = [
-		"img/portfolio-img/Wedding-34.jpg",
-		"img/portfolio-img/Portrait-01.jpg",
-		"img/portfolio-img/Kid-01.jpg",
-		"img/portfolio-img/Wedding-35.jpg",
-		"img/portfolio-img/Portrait-02.jpg",
-		"img/portfolio-img/Kid-02.jpg",
-		"img/portfolio-img/Wedding-36.jpg",
-		"img/portfolio-img/Portrait-03.jpg",
-		"img/portfolio-img/Kid-03.jpg",
-		"img/portfolio-img/Wedding-37.jpg",
-		"img/portfolio-img/Portrait-04.jpg",
-		"img/portfolio-img/Kid-04.jpg",
-		"img/portfolio-img/Wedding-38.jpg",
-		"img/portfolio-img/Portrait-05.jpg",
-		"img/portfolio-img/Kid-05.jpg",
-		"img/portfolio-img/Wedding-39.jpg",
-		"img/portfolio-img/Portrait-06.jpg",
-		"img/portfolio-img/Kid-06.jpg",
-		"img/portfolio-img/Wedding-40.jpg",
-		"img/portfolio-img/Portrait-07.jpg",
-		"img/portfolio-img/Kid-07.jpg",
-		"img/portfolio-img/Wedding-41.jpg",
-		"img/portfolio-img/Portrait-08.jpg",
-		"img/portfolio-img/Kid-08.jpg",
-		"img/portfolio-img/Wedding-33.jpg",
-		"img/portfolio-img/Portrait-09.jpg",
-		"img/portfolio-img/Kid-09.jpg",
-		"img/portfolio-img/Wedding-43.jpg",
-		"img/portfolio-img/Portrait-10.jpg",
-		"img/portfolio-img/Kid-10.jpg",
+		wedding34,
+		portrait01,
+		kid01,
+		wedding35,
+		portrait02,
+		kid02,
+		wedding36,
+		portrait03,
+		kid03,
+		wedding37,
+		portrait04,
+		kid04,
+		wedding38,
+		portrait05,
+		kid05,
+		wedding39,
+		portrait06,
+		kid06,
+		wedding40,
+		portrait07,
+		kid07,
+		wedding41,
+		portrait08,
+		kid08,
+		wedding33,
+		portrait09,
+		kid09,
+		wedding43,
+		portrait10,
+		kid10,
 	]
 
 	return (
@@ -116,7 +148,7 @@ const Portfolio = () => {
 			{/* Gallery Area Start */}
 			<div>
 				{images
-					.filter((image) => image.match(active))
+					.filter((image) => image.src.match(active))
 					.reverse()
 					.map((image, key) => (
 						<span
@@ -131,7 +163,7 @@ const Portfolio = () => {
 								transition: "display 2s ease"
 							}}>
 							<a href={image}>
-								<img src={image} />
+								<Img src={image} />
 							</a>
 						</span>
 					))}

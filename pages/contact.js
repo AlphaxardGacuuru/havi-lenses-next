@@ -1,10 +1,14 @@
+import Img from 'next/image'
+
+import contactImg from "../public/img/bg-img/contact.jpg"
+
 const Contact = () => {
 	return (
 		<div>
 			{/* <!-- ***** Hero Area Start ***** --> */}
 			<div className="row">
 				<div className="col-sm-6 p-0">
-					<img src="img/bg-img/contact.jpg" alt="creator" />
+					<Img src={contactImg} alt="creator" />
 				</div>
 				<div className="col-sm-6" style={{ backgroundColor: "#232323" }}>
 					<div className="mt-5 mb-5 hidden"></div>

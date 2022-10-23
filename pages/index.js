@@ -2,24 +2,26 @@ import Link from "next/link"
 import Img from "next/image"
 import Carousel from 'react-bootstrap/Carousel';
 
+import wedding5 from '../public/img/portfolio-img/Wedding-05.jpg'
+import wedding31 from '../public/img/portfolio-img/Wedding-31.jpg'
+import wedding22 from '../public/img/portfolio-img/Wedding-22.jpg'
+import me3 from "../public/img/bg-img/Me-3.jpg"
+import wedding40 from '../public/img/portfolio-img/Wedding-40.jpg'
+import wedding13 from '../public/img/portfolio-img/Wedding-13.jpg'
+
 const Index = () => {
 
 	// Images array
-	const images = [
-		"/img/portfolio-img/Wedding-05.jpg",
-		"/img/portfolio-img/Wedding-40.jpg",
-		"/img/portfolio-img/Wedding-31.jpg",
-		"/img/portfolio-img/Wedding-13.jpg",
-	]
+	const images = [wedding5, wedding40, wedding31, wedding13]
 
 	return (
 		<div>
 			{/* <!-- ***** Hero Area Start ***** --> */}
 			<Carousel controls={false}>
 				<Carousel.Item>
-					<img
+					<Img
 						className="d-block w-100"
-						src="/img/portfolio-img/Wedding-05.jpg"
+						src={wedding5}
 						alt="First slide"
 						loading="lazy" />
 					<Carousel.Caption>
@@ -27,9 +29,9 @@ const Index = () => {
 					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item>
-					<img
+					<Img
 						className="d-block w-100"
-						src="/img/portfolio-img/Wedding-31.jpg"
+						src={wedding31}
 						alt="Second slide"
 						loading="lazy" />
 
@@ -38,9 +40,9 @@ const Index = () => {
 					</Carousel.Caption>
 				</Carousel.Item>
 				<Carousel.Item>
-					<img
+					<Img
 						className="d-block w-100"
-						src="/img/portfolio-img/Wedding-22.jpg"
+						src={wedding22}
 						alt="Third slide"
 						loading="lazy" />
 
@@ -111,8 +113,8 @@ const Index = () => {
 				</div>
 			</div>
 			<div className="row">
-				<div className="col-sm-6 p-0">
-					<img src="img/bg-img/Me-3.jpg" loading="lazy" alt="creator" />
+				<div className="col-sm-6 p-0" style={{ backgroundColor: "#232323" }}>
+					<Img src={me3} loading="lazy" alt="creator" />
 				</div>
 				<div className="col-sm-6" style={{ backgroundColor: "#232323" }}>
 					<div className="mt-5 mb-5 hidden"></div>
@@ -292,7 +294,7 @@ const Index = () => {
 								transition: "display 2s ease"
 							}}>
 							<a href={image}>
-								<img src={image} />
+								<Img src={image} />
 							</a>
 						</span>
 					))}

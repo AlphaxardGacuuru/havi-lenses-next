@@ -1,4 +1,8 @@
 import Link from 'next/link'
+import Img from 'next/image'
+
+import blogImg from "../public/img/bg-img/blog.jpg"
+
 
 const Services = () => {
 	return (
@@ -6,7 +10,7 @@ const Services = () => {
 			{/* <!-- ***** Hero Area Start ***** --> */}
 			<div className="row">
 				<div className="col-sm-6 p-0">
-					<img src="img/bg-img/blog.jpg" alt="creator" />
+					<Img src={blogImg} alt="creator" />
 				</div>
 				<div className="col-sm-6" style={{ backgroundColor: "#232323" }}>
 					<div className="mt-5 mb-5 hidden"></div>
