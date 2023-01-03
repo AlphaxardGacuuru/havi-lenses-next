@@ -27,7 +27,6 @@ class MyDocument extends Document {
 					Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
 					work correctly both with client-side routing and a non-root public URL.
 					Learn how to configure a non-root public URL by running `npm run build`. */}
-					<title>HAVI Lenses</title>
 
 					{/* <!-- Favicon  --> */}
 					<link rel="icon" href="img/core-img/havi logos-6_edited.jpg" />
@@ -39,7 +38,7 @@ class MyDocument extends Document {
 				<body className="antialiased">
 					<noscript>
 						<center>
-							<h2 class="m-5">
+							<h2 className="m-5">
 								We're sorry but HAVI Lenses doesn't work properly without JavaScript enabled.
 								Please enable it to continue.
 							</h2>
