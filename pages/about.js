@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import Img from 'next/image'
+
+import Img from '../components/Img'
 
 import me3 from "../public/img/bg-img/Me-3.jpg"
 
@@ -9,7 +10,10 @@ const About = () => {
 			{/* <!-- ***** Hero Area Start ***** --> */}
 			<div className="row">
 				<div className="col-sm-6 p-0">
-					<Img src={me3} loading="lazy" alt="creator" />
+					<Img
+						src={me3}
+						loading="lazy"
+						alt="creator" />
 				</div>
 				<div className="col-sm-6" style={{ backgroundColor: "#232323" }}>
 					<div className="mt-5 mb-5 hidden"></div>

@@ -1,4 +1,5 @@
 import "/styles/style.css"
+import CustomHead from "../components/CustomHead"
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
@@ -19,6 +20,7 @@ function MyApp({ Component, pageProps }) {
 
 	return (
 		<>
+			<CustomHead />
 			<Header />
 			<Component {...pageProps} />
 			<Footer />

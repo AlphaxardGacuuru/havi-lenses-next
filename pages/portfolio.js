@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Link from 'next/link'
-import Img from 'next/image'
+
+import Img from '../components/Img'
 
 import wedding34 from "../public/img/portfolio-img/Wedding-34.jpg"
 import portrait01 from "../public/img/portfolio-img/Portrait-01.jpg"

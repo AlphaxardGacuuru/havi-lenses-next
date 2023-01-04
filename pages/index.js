@@ -1,5 +1,5 @@
 import Link from "next/link"
-import Img from "next/image"
+import Img from '../components/Img'
 import Carousel from 'react-bootstrap/Carousel';
 
 import wedding5 from '../public/img/portfolio-img/Wedding-05.jpg'
@@ -114,7 +114,10 @@ const Index = () => {
 			</div>
 			<div className="row">
 				<div className="col-sm-6 p-0" style={{ backgroundColor: "#232323" }}>
-					<Img src={me3} loading="lazy" alt="creator" />
+					<Img
+						src={me3}
+						loading="lazy"
+						alt="creator" />
 				</div>
 				<div className="col-sm-6" style={{ backgroundColor: "#232323" }}>
 					<div className="mt-5 mb-5 hidden"></div>

@@ -1,5 +1,6 @@
 import Link from 'next/link'
-import Img from 'next/image'
+
+import Img from '../components/Img'
 
 import blogImg from "../public/img/bg-img/blog.jpg"
 

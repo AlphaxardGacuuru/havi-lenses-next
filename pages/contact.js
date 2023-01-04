@@ -1,4 +1,4 @@
-import Img from 'next/image'
+import Img from '../components/Img'
 
 import contactImg from "../public/img/bg-img/contact.jpg"
 
